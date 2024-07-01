@@ -1,1 +1,3 @@
-# repo
+Repozytorium do ćwiczeń
+
+PROJEKT: VUG
