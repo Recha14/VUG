@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const passwordInput = document.getElementById('password');
-    const strengthBar = document.getElementById('strength-bar');
-    const strengthText = document.getElementById('password-strength-text');
-    const strengthTextInfo = document.getElementById('password-strength-info');
+    const strengthBar = document.getElementById('strengthBar');
+    const strengthText = document.getElementById('passwordStrengthText');
+    const strengthTextInfo = document.getElementById('passwordStrengthInfo');
 
     passwordInput.addEventListener('input', updatePasswordStrength);
 
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
             strength.message = '';
         } else if (password.length < 6) {
             strength.percent = 20;
-            strength.message = 'Bardzo słabe';
-            strength.info = 'Hasło powinno zawierać minimum 8 znaków, mała cyfra, duża cyfra, znak specjalny, liczbę';
+            strength.message = 'Very weak';
+            strength.info = 'The password should contain at least 8 characters, a small digit, a large digit, a special character, and a number';
             strength.color = 'red';
         } else {
             let score = 0;
@@ -38,18 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (score <= 40) {
                 strength.percent = score;
-                strength.message = 'Słabe';
-                strength.info = 'Hasło powinno zawierać minimum 8 znaków, mała cyfra, duża cyfra, znak specjalny, liczbę';
+                strength.message = 'Weak';
+                strength.info = 'The password should contain at least 8 characters, a small digit, a large digit, a special character, and a number';
                 strength.color = 'orange';
             } else if (score <= 80) {
                 strength.percent = score;
-                strength.message = 'Średnie';
-                strength.info = 'Hasło powinno zawierać minimum 8 znaków, mała cyfra, duża cyfra, znak specjalny, liczbę';
+                strength.message = 'Medium';
+                strength.info = 'The password should contain at least 8 characters, a small digit, a large digit, a special character, and a number';
                 strength.color = 'yellow';
             } else {
                 strength.percent = score;
-                strength.message = 'Mocne';
-                strength.info = 'Bardzo dobre hasło';
+                strength.message = 'Excelent !';
+                strength.info = 'Impressive password';
                 strength.color = 'green';
             }
         }
