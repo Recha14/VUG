@@ -44,14 +44,13 @@ button:active {
             margin-top: 2%;
             margin-left: 5%;
             width: 75%;
+            z-index: 1;
         }
         #profile {
             display: inline-block;
         }
 
     #navigate {
-        /* margin-left: 15%; */
-        /* margin-right: 15%; */
         display: inline-block;
         width:120px;
         height:40px;
@@ -64,7 +63,10 @@ button:active {
             z-index: 1;
         }
             .navigateBarButton {
-                display: inline-block;
+                position: absolute;
+                display: flex;
+                margin-top: 5%;
+                margin-left: 15%;
                 height:45px;
                 z-index: 2;
             }
