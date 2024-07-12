@@ -37,35 +37,58 @@ button:active {
 }
 
     #musicAndProfile {
+        display: block;
     }
         #music {
-            
+            display: inline-block;
         }
         #profile {
+            display: inline-block;
         }
 
     #navigate {
         /* margin-left: 15%; */
         /* margin-right: 15%; */
+        display: inline-block;
         width:120px;
         height:40px;
     }
         #navigateBar {
-            place-items: center;
+            position: absolute;
             height:45px;
+            z-index: 1;
         }
             .navigateBarButton {
-                position: absolute;
-                place-items: center;
+                display: inline-block;
                 height:45px;
+                z-index: 2;
             }
 
     #containerTiles {
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
 
     #friendAndLogo {
+        display: block;
     }
         #friends {
+            display: inline-block;
+            width: 60%;
+            margin-left: 5%;
+            font-size: 30px;
+            color: #F8F0C6;
         }
+        #friends #font {
+            display: inline-block;
+            margin-left: -5%;
+            font-size: 30px;
+            color: #F8F0C6;
+        }
+
         #logo {
+            display: inline-block;
+            margin-right: 5%;
+
         }
