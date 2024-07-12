@@ -1,6 +1,6 @@
 body{
     background-color: #000000;
-    background-image: url(../assets/home/menuBackground.jpg);
+    background-image: url(../assets/home/menuBackground.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -41,6 +41,9 @@ button:active {
     }
         #music {
             display: inline-block;
+            margin-top: 2%;
+            margin-left: 5%;
+            width: 75%;
         }
         #profile {
             display: inline-block;
@@ -55,6 +58,8 @@ button:active {
     }
         #navigateBar {
             position: absolute;
+            margin-top: 5%;
+            margin-left: 15%;
             height:45px;
             z-index: 1;
         }
@@ -75,20 +80,18 @@ button:active {
     }
         #friends {
             display: inline-block;
-            width: 60%;
+            width: 85%;
             margin-left: 5%;
             font-size: 30px;
             color: #F8F0C6;
         }
         #friends #font {
             display: inline-block;
-            margin-left: -5%;
+            margin-left: -3%;
             font-size: 30px;
             color: #F8F0C6;
         }
 
-        #logo {
+        #logoVUG {
             display: inline-block;
-            margin-right: 5%;
-
         }
