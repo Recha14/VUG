@@ -72,9 +72,28 @@ button:active {
             }
 
     #containerTiles {
+        width: 100%;
         display: block;
         margin-top: 5%;
         margin-bottom: 10%;
+    }
+    #containerTilesTest {
+        width: 100%;
+        height: 450 px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #containerTiles img {
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: all ease-in-out 0.5s;
+    }
+    #containerTiles img:hover {
+        width: 32%;
     }
 
     #friendAndLogo {
