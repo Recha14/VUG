@@ -1,12 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+
 body { 
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
     background-image: url(../assets/start/startBackground.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -15,45 +16,65 @@ body {
     color: #002F49;
 }
 
-button{
+.container {
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    background:#fff;
+    width: 400px;
+    padding: 20px;
+    margin-left: 25%;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px 0px #000001e6;
+}
+#signIn {
+    margin-top: 12%;
+}
+#signUp {
+    margin-top: 8%;
+}
+
+.buttonAll{
     height: 100%;
     width:100%;
     padding: 10px;
+    margin-bottom: 10px;
     place-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    font-style: italic;
     border: none;
+    box-shadow: 0 4px 5px 0px #000001e6;
     border-radius: 5px;
     background-image: url(../assets/home/buttonNoActive.png);
     color: #F8F0C6;
     cursor: pointer;
 }
-button:hover {
-    place-items: center;
-    background-image: url(../assets/home/buttonActive.png);
-    color: #002F49;
-}
-button:active {
+.buttonAll:hover {
     place-items: center;
     background-image: url(../assets/home/buttonActive.png);
     color: #002F49;
 }
 
-.loginContainer {
-    margin-top: 12%;
-    margin-left: 20%;
-    margin-right: 5%;
+#change {
+    display: inline;
+    margin-left: 18%;
 }
 
-.registerContainer {
-    margin-top: 8%;
+#signInButton {
+    display: inline;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b6fa5;
+}
+#signInButton:hover {
+    color: #002F49;
 }
 
 h1 {
+    text-align: center;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 input[type="text"],
@@ -72,42 +93,22 @@ label {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#forgotPassword {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+
 .inputGroup {
     margin-bottom: 15px;
     text-align: left;
 }
 
-.choiceLoginRegister {
-    flex-direction: row; 
-}
-
-#choiceLogin {
-    margin: 0;
-}
-
-#choiceRegister {
-    margin-top: 10px;
-}
-
-.loginContainer {
-    width: 400px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0000001a;
-    text-align: center;
-}
-
-.registerContainer {
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0000001a;
-    text-align: center;
-}
-
-/* Password strength */
 #passwordStrength {
     margin-top: 10px;
     height: 5px;
@@ -132,12 +133,10 @@ label {
 #passwordStrengthInfo { 
     display: block;
     margin-top: 5px;
-    font-size: 9px;
-    font-style: italic;
+    font-size: 10px;
     color: #6e6e6e;
 }
 
-/* User remember */
 #rememberMeCheckbox {
     float: left;
     margin-bottom: 15px;
@@ -146,17 +145,5 @@ label {
 #rememberMe {
     float: left;
     margin-left: 5px;
-    padding-top: 4px;
     font-size: 10px;
-}
-
-#leftSiteStart {
-    width: 50%;
-    height: 100%;
-}
-#leftSiteStartImg {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    margin-left: auto;
 }

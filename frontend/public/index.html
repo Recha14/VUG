@@ -9,56 +9,69 @@
         <link rel="stylesheet" href="../css/index.css">
     </head>
     <body>
-            <div class="loginContainer">
-                <h1>Logowanie</h1>
-                <form action="login" method="POST">
-                    <div class="inputGroup">
-                        <label for="username">Login</label>
-                        <input type="text" id="username" name="username" required>
+        <div class="container" id="signUp" style="display:none;">
+            <h1>Register</h1>
+            <form method="post" action="register.php">
+                <div class="inputGroup">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" required placeholder="Login">
+                </div>
+                <div class="inputGroup">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="inputGroup">
+                    <label for="password"></label>
+                    <input type="password" id="passwordRegister" name="passwordRegister" required placeholder="Password">
+                </div>
+                <div class="inputGroup">
+                    <label for="passwordAgain"></label>
+                    <input type="password" id="passwordAgain" name="passwordAgain" required placeholder="Repeat password"">
+                    <div id="passwordStrength">
+                        <div id="strengthBar"></div>
                     </div>
-                    <div class="inputGroup">
-                        <label for="password">Password</label>
-                        <input type="password" id="passwordLogin" name="passwordLogin" required>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="rememberMeCheckbox" name="rememberMeCheckbox">
-                        <label for="rememberMe" id="rememberMe" name="rememberMe">Remember me</label>
-                    </div>
-                    <div class="inputGroup">
-                        <button type="submit" href="home.html">Login !</button>
-                    </div>
-                </form>
-            </div> 
+                    <small id="passwordStrengthText"></small>
+                    <small id="passwordStrengthInfo"></small>
+                </div>
+                <div class="inputGroup">
+                    <button class="buttonAll" type="submit">Register</button>
+                </div>
+            </form>
 
-            <div class="registerContainer">
-                <h1>Rejestracja</h1>
-                <form action="register" method="PUT">
-                    <div class="inputGroup">
-                        <label for="username">Login</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="inputGroup">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="inputGroup">
-                        <label for="password">Password</label>
-                        <input type="password" id="passwordRegister" name="passwordRegister" required>
-                    </div>
-                    <div class="inputGroup">
-                        <label for="passwordAgain">Repeat password</label>
-                        <input type="password" id="passwordAgain" name="passwordAgain" required>
-                        <div id="passwordStrength">
-                            <div id="strengthBar"></div>
-                        </div>
-                        <small id="passwordStrengthText"></small>
-                        <small id="passwordStrengthInfo"></small>
-                    </div>
-                    <div class="inputGroup">
-                        <button type="submit">Register !</button>
-                    </div>
-                </form>
-            </div>
+            <div class="links">
+                <p id="change">Already Have Account ?</p>
+                <button id="signInButton">Sign In</button>
+              </div>
+        </div>
+
+        <div class="container" id="signIn">
+            <h1>Login</h1>
+            <form method="post" action=action="register.php">
+                <div class="inputGroup">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" required placeholder="Login">
+                </div>
+                <div class="inputGroup">
+                    <label for="password"></label>
+                    <input type="password" id="passwordLogin" name="passwordLogin" required placeholder="Password">
+                </div>
+                <div class="inputGroup">
+                    <input type="checkbox" id="rememberMeCheckbox" name="rememberMeCheckbox">
+                    <label for="rememberMe" id="rememberMe" name="rememberMe">Remember me</label>
+                </div>
+                <div class="inputGroup">
+                    <a id="forgotPassword" name="forgotPassword" href="#">Forgot password ?</a>  <!-- dodać link do resetu hasła-->
+                </div>
+                <div class="inputGroup">
+                    <button class="buttonAll" type="submit" href="home.html">Sign In</button>
+                </div>
+            </form>
+
+            <div class="links">
+                <p id="change">Don't have account yet?</p>
+                <button id="signInButton">Sign Up</button>
+              </div>
+        </div> 
 
         <script src="../js/main.js"></script>
         <script src="../js/choiceLoginOrPassword.js"></script>
