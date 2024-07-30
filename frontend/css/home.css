@@ -1,5 +1,4 @@
 body{
-    background-color: #000000;
     background-image: url(../assets/home/menuBackground.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -8,18 +7,19 @@ body{
 }
 
 button{
+    width:120px;
+    height:40px;
+    padding: 5px 15px 7px 15px;
+    place-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
-    width:120px;
-    height:40px;
-    padding: 5px 15px 7px 15px;
-    border-radius:5px;
-    place-items: center;
-    background-color: transparent;
     border: none;
+    border-radius:5px;
+    background-color: transparent;
     color: #F8F0C6;
+    cursor: pointer;
 }
 button:hover {
     place-items: center;
@@ -89,7 +89,7 @@ button:active {
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        border: 2px solid white;
+        border: 2px solid #ffffff;
         transition: all ease-in-out 0.5s;
     }
     #containerTiles img:hover {

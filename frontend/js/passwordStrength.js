@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const passwordInput = document.getElementById('password');
+    const passwordInput = document.getElementById('passwordRegister');
     const strengthBar = document.getElementById('strengthBar');
     const strengthText = document.getElementById('passwordStrengthText');
     const strengthTextInfo = document.getElementById('passwordStrengthInfo');
@@ -14,27 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
         strengthTextInfo.textContent = strength.info;
     }
 
-    function getPasswordStrength(password) {
+    function getPasswordStrength(passwordRegister) {
         let strength = {
             percent: 0,
             message: '',
             color: 'red'
         };
 
-        if (password.length === 0) {
+        if (passwordRegister.length === 0) {
             strength.message = '';
-        } else if (password.length < 6) {
+        } else if (passwordRegister.length < 6) {
             strength.percent = 20;
             strength.message = 'Very weak';
             strength.info = 'The password should contain at least 8 characters, a small digit, a large digit, a special character, and a number';
             strength.color = 'red';
         } else {
             let score = 0;
-            if (/[a-z]/.test(password)) score += 20; // lower case
-            if (/[A-Z]/.test(password)) score += 20; // upper case
-            if (/[0-9]/.test(password)) score += 20; // digits
-            if (/[^A-Za-z0-9]/.test(password)) score += 20; // special characters
-            if (password.length >= 8) score += 20; // length
+            if (/[a-z]/.test(passwordRegister)) score += 20; // lower case
+            if (/[A-Z]/.test(passwordRegister)) score += 20; // upper case
+            if (/[0-9]/.test(passwordRegister)) score += 20; // digits
+            if (/[^A-Za-z0-9]/.test(passwordRegister)) score += 20; // special characters
+            if (passwordRegister.length >= 8) score += 20; // length
 
             if (score <= 40) {
                 strength.percent = score;

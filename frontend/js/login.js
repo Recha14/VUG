@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
         const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+        const password = document.getElementById('passwordLogin').value;
         const rememberMe = rememberMeCheckbox.checked;
         
-        if (username === 'admin' && password === 'password') {
+        if (username === 'admin' && password === 'passwordLogin') {
             if (rememberMe) {
                 localStorage.setItem('loggedIn', 'true');
                 localStorage.setItem('username', username);

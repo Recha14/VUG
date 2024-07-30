@@ -2,31 +2,58 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #061831;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    background-image: url(../assets/start/startBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #002F49;
+}
+
+button{
+    height: 100%;
+    width:100%;
+    padding: 10px;
+    place-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    border-radius: 5px;
+    background-image: url(../assets/home/buttonNoActive.png);
+    color: #F8F0C6;
+    cursor: pointer;
+}
+button:hover {
+    place-items: center;
+    background-image: url(../assets/home/buttonActive.png);
+    color: #002F49;
+}
+button:active {
+    place-items: center;
+    background-image: url(../assets/home/buttonActive.png);
+    color: #002F49;
+}
+
+.loginContainer {
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.registerContainer {
+    margin-top: 8%;
 }
 
 h1 {
     margin-bottom: 20px;
     font-size: 24px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0056b3;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1c3f64;
 }
 
 input[type="text"],
@@ -65,9 +92,9 @@ label {
 .loginContainer {
     width: 400px;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
     text-align: center;
 }
 
@@ -76,7 +103,7 @@ label {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
     text-align: center;
 }
 
@@ -91,7 +118,7 @@ label {
 #strengthBar {
     height: 100%;
     width: 0;
-    background-color: red;
+    background-color: #ff0000;
     border-radius: 5px;
     transition: width 0.3s;
 }
@@ -107,7 +134,7 @@ label {
     margin-top: 5px;
     font-size: 9px;
     font-style: italic;
-    color: rgb(110, 110, 110);
+    color: #6e6e6e;
 }
 
 /* User remember */
@@ -121,7 +148,6 @@ label {
     margin-left: 5px;
     padding-top: 4px;
     font-size: 10px;
-    color: rgb(0, 0, 0);
 }
 
 #leftSiteStart {
