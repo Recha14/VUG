@@ -1,7 +1,7 @@
-Repozytorium do ćwiczeń
+Repository for exercises
 
-PROJEKT: VUG - strona
+PROJECT: VUG - page
 
-Data: 01/07/2024
+Date: 01/07/2024
 
-Kod aplikacji webowej, podzielony na frontend (HTML,CSS,JS) i backend (PHP). 
+Web application code, divided into frontend (HTML, CSS, JS) and backend (PHP).
